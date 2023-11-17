@@ -1,5 +1,6 @@
 ## ETL_OCO2_GEOS_L3_visualization
 The project involves constructing a comprehensive ETL (Extract, Transform, Load) workflow using Apache Airflow to systematically fetch OCO2 Level 3 data from an OpenDAP server with a bi-weekly cadence, aligned with the 15-day cycle of satellite data collection. 
+  
   The workflow begins with the Extract phase, employing Python and Bash operators to efficiently extract data from the OpenDAP server. Subsequently, in the Transform phase, the extracted data undergoes necessary processing and formatting. Notably, this phase includes the generation of PNGs/JPEGs to facilitate visual analysis. The Load phase seamlessly integrates with AWS S3, ensuring that the transformed data, along with the generated images, is directly loaded into the specified S3 bucket. This not only optimizes storage efficiency but also ensures real-time accessibility of the data on the scalable and reliable AWS platform. The subsequent steps in the workflow, including the creation of animations and the maintenance of a clean S3 bucket, build upon this ETL foundation, providing a robust and automated solution for handling and visualizing OCO2 Level 3 data.
 
 ![](https://github.com/sagarlimbu0/ETL_OCO2_GEOS_L3_visualization/blob/main/oco2_etl.jpg)
